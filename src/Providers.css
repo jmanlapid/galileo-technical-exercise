@@ -1,0 +1,82 @@
+header {
+  height: 68px;
+  background-color: red;
+}
+
+header > h1 {
+  margin: 0;
+  padding-top: 12px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.active-providers {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.sidebar {
+  height: calc(100vh - 68px);
+  width: 100px;
+  background-color: cyan;
+}
+
+.modal-background {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  display: block;
+  position: relative;
+  height: 200px;
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 12px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.provider-header {
+  text-align: center;
+}
+
+.tasks {
+  list-style-type: none;
+}
+
+.task {
+  height: 40px;
+  border: 1px solid  grey;
+}
+
+.task:not(:last-of-type) {
+  border-bottom: none;
+}
+
+.provider-column {
+  width: 220px;
+}
+
+input {
+  margin-bottom: 8px;
+}
+
+.result {
+  cursor: pointer;
+  margin-bottom: 8px;
+}
